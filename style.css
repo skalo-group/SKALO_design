@@ -235,4 +235,33 @@ body {
   color: #444;      /* gri elegant */
   margin-top: -0.5rem;
 }
+/* === RESPONSIVE (telefon) === */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo img {
+    height: 90px; /* era 165px */
+  }
+
+  .menu {
+    gap: 0.5rem;
+  }
+
+  .menu a {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
 
