@@ -10,7 +10,9 @@
 <header class="navbar">
   <div class="logo"><img src="images/logo.png" alt="logo SKALO"></div>
   <nav>
-  <ul class="menu">
+ <nav class="nav-mobile">
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul class="menu" id="mobileMenu">
   <li><a href="index.html">Acasă</a></li>
   <li><a href="despre.html">Despre</a></li>
   <li><a href="servicii.html">Servicii</a></li>
@@ -81,6 +83,12 @@
     <p>&copy; 2025 SKALO design. Toate drepturile rezervate.</p>
   </div>
 </footer>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
