@@ -326,5 +326,14 @@ body {
     font-size: 1.1rem;
   }
 }
+/* --- REPARAȚIE HAMBURGER --- */
+.hamburger {
+  display: block !important;
+  font-size: 32px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0.4rem 0.6rem;
+  z-index: 99999;
+}
 
 
