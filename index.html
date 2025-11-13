@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SKALO design</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>SKALO design – Acasă</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<script>
-function toggleProiectare() {
-  const panel = document.getElementById('proiectare-panel');
-  panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
-}
-</script>
+
 <body>
-  <header class="navbar">
-   <div class="logo">
-  <img src="images/logo.png" alt="SKALO design">
-</div>
 
-    <nav>
-  <ul class="menu">
-    <li><a class="active" href="index.html">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
-    <li><a href="servicii.html">Servicii</a></li>
-    <li><a href="proiecte.html">Proiecte</a></li>
-    <li><a href="parteneri.html">Parteneri</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+<header class="navbar">
+  <div class="logo"><img src="images/logo.png" alt="logo SKALO"></div>
+  <nav>
+    <ul class="menu">
+      <li><a class="active" href="index.html">Acasă</a></li>
+      <li><a href="despre.html">Despre</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="proiecte.html">Proiecte</a></li>
+      <li><a href="parteneri.html">Parteneri</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  </header>
+<section class="hero">
+  <div class="overlay">
+    <h1>Arhitectură. Design. Inginerie.</h1>
+    <p>Proiectăm spații contemporane care combină estetica și funcționalitatea.</p>
+  </div>
+</section>
 
-  <section class="hero">
-    <div class="overlay">
-      <h1>Arhitectură. Design. Inginerie.</h1>
-      <p>Proiectăm spații contemporane care combină estetica și funcționalitatea.</p>
-    </div>
-  </section>
+<section id="despre" class="content">
+  <h2>Despre noi</h2>
+  <p>SKALO design oferă servicii complete de proiectare arhitecturală, design interior și consultanță tehnică. 
+  Lucrăm cu pasiune pentru a crea soluții inteligente și durabile, adaptate fiecărui proiect.</p>
+</section>
 
-  <section id="despre" class="content">
-    <h2>Despre noi</h2>
-    <p>SKALO design oferă servicii complete de proiectare arhitecturală, design interior și consultanță tehnică. 
-    Lucrăm cu pasiune pentru a crea soluții inteligente și durabile, adaptate fiecărui proiect.</p>
-  </section>
-
- <section id="servicii" class="content">
+<section id="servicii" class="content">
   <h2>Servicii</h2>
 
   <div class="grid">
     <button class="service-toggle" onclick="toggleProiectare()">
-  Proiectare & Inginerie
-</button>
+      Proiectare & Inginerie
+    </button>
 
-<div id="proiectare-panel" class="panel">
-  <h3>Proiectare & Inginerie</h3>
-  <ul class="serv-list">
-    <li>Teme de proiectare</li>
-    <li>Studii de Fezabilitate (SF)</li>
-    <li>Documentații de Avizare a Lucrărilor de Intervenție (DALI)</li>
-    <li>Analize Cost-Beneficiu (ACB), conform HG 907/2016</li>
-    <li>Proiect Tehnic de Execuție</li>
-    <li>Asistență Tehnică în execuție</li>
-  </ul>
-</div>
+    <div id="proiectare-panel" class="panel">
+      <h3>Proiectare & Inginerie</h3>
+      <ul class="serv-list">
+        <li>Teme de proiectare</li>
+        <li>Studii de Fezabilitate (SF)</li>
+        <li>Documentații DALI</li>
+        <li>Analize Cost-Beneficiu (ACB)</li>
+        <li>Proiect Tehnic de Execuție</li>
+        <li>Asistență Tehnică în execuție</li>
+      </ul>
+    </div>
 
-    <a class="service-button" href="#consultanta">
+    <a class="service-button" href="consultanta-finantari.html">
       Consultanță finanțări nerambursabile
     </a>
   </div>
@@ -75,55 +66,70 @@ function toggleProiectare() {
   <p>Echipa SKALO DESIGN a fost implicată în proiecte diverse, acoperind domenii esențiale ale infrastructurii și dezvoltării urbane:</p>
 
   <ul class="serv-list">
-    <li>Reabilitarea și extinderea unităților de învățământ (școli, grădinițe) și dotarea acestora</li>
-    <li>Construire și reabilitare centre pentru copii</li>
-    <li>Construire centre de zi pentru persoane vârstnice</li>
-
-    <li>Reabilitare termică a spitalelor și ambulatoriilor</li>
-    <li>Izolare termică a blocurilor de locuințe</li>
-
-    <li>Infrastructură rutieră și drumuri de acces</li>
-    <li>Rețele de apă și canalizare</li>
-
-    <li>Spații verzi urbane – parcuri, scuaruri, zone de loisir</li>
-    <li>Centre de agrement și sport</li>
-    <li>Zone turistice și zone de promenadă</li>
-
-    <li>Biserici și monumente istorice (categoria A și B)</li>
-    <li>Reabilitarea spațiilor aflate în zone protejate sau zone de patrimoniu</li>
+    <li>Reabilitarea și extinderea unităților de învățământ (școli, grădinițe)</li>
+    <li>Centre pentru copii</li>
+    <li>Centre de zi pentru persoane vârstnice</li>
+    <li>Reabilitare termică spitale și ambulatorii</li>
+    <li>Izolare termică blocuri</li>
+    <li>Infrastructură rutieră</li>
+    <li>Rețele apă și canalizare</li>
+    <li>Spații verzi urbane</li>
+    <li>Centre sport și agrement</li>
+    <li>Zone turistice și promenade</li>
+    <li>Monumente istorice categoria A și B</li>
+    <li>Zone protejate și patrimoniu</li>
   </ul>
 </section>
 
-<section id="proiectare" class="content">
-  <h3>Proiectare & Inginerie</h3>
-  <ul class="serv-list">
-    <li>Teme de proiectare</li>
-    <li>Studii de Fezabilitate (SF)</li>
-    <li>Documentații de Avizare a Lucrărilor de Intervenție (DALI)</li>
-    <li>Analize Cost-Beneficiu (ACB), conform HG 907/2016</li>
-    <li>Proiect Tehnic de Execuție</li>
-    <li>Asistență Tehnică în execuție</li>
-  </ul>
+<section id="contact" class="content contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:contact@skalodesign.ro">contact@skalodesign.ro</a></p>
+  <p>Telefon: 07xx xxx xxx</p>
 </section>
 
-<section id="consultanta" class="content">
-  <h3>Consultanță finanțări nerambursabile</h3>
-  <ul class="serv-list">
-    <li>Analiză eligibilitate</li>
-    <li>Elaborare documentație</li>
-    <li>Asistență implementare proiect</li>
-  </ul>
-</section>
+<footer class="footer">
+  <div class="footer-row">
 
+    <div class="footer-col">
+      <h3>Despre noi</h3>
+      <p>Birou de proiectare specializat în arhitectură și inginerie pentru proiecte publice și private.</p>
+    </div>
 
-  <section id="contact" class="content contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:contact@skalodesign.ro">contact@skalodesign.ro</a></p>
-    <p>Telefon: 07xx xxx xxx</p>
-  </section>
+    <div class="footer-separator"></div>
 
-  <footer>
+    <div class="footer-col">
+      <h3>Informații</h3>
+      <ul>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="proiecte.html">Portofoliu</a></li>
+        <li><a href="parteneri.html">Parteneri</a></li>
+        <li><a href="#">Colaborări</a></li>
+        <li><a href="#">Link-uri utile</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-col">
+      <h3>Datele Companiei</h3>
+      <p>SKALO DESIGN SRL</p>
+      <p>CUI: 00000000</p>
+      <p>Reg. Com.: J00/0000/2025</p>
+      <br>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:contact@skalodesign.ro">contact@skalodesign.ro</a></p>
+      <p>Telefon: 07xx xxx xxx</p>
+      <p>Adresă: București, România</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
     <p>&copy; 2025 SKALO design. Toate drepturile rezervate.</p>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
+
