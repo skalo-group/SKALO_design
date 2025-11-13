@@ -237,3 +237,11 @@ body {
     display: none;
   }
 }
+/* HAMBURGER VIZIBIL PE MOBIL */
+.hamburger {
+  color: #000 !important;
+  font-weight: bold;
+}
+.hamburger {
+  opacity: 1 !important;
+}
