@@ -242,4 +242,61 @@ body {
   color: #000 !important;
   font-weight: bold;
 }
+/* ==========================
+   HAMBURGER VIZIBIL + FIXAT
+   ========================== */
+
+.hamburger {
+  display: block !important;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0.4rem 0.6rem;
+  color: #000 !important;     /* vizibil negru */
+  opacity: 1 !important;      
+  z-index: 99999;
+}
+
+/* MENIU MOBIL */
+@media (max-width: 768px) {
+
+  .menu {
+    display: none !important;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    width: 75%;
+    background: #f5f0e6;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+
+  .menu.menu-open {
+    display: flex !important;
+  }
+
+  .menu li {
+    margin-bottom: 0.7rem;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    color: #111;
+    font-size: 1.1rem;
+  }
+
+  .menu li a.active {
+    background: #00bcd4 !important;
+    color: #fff !important;
+  }
+
+}
 
