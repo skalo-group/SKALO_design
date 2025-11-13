@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SKALO design</title>
+  <title>SKALO design – Acasă</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="SKALO">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="SKALO"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
@@ -27,8 +23,6 @@
   </ul>
 </header>
 
-
-<!-- HERO SECTION -->
 <section class="hero">
   <div class="overlay">
     <h1>Arhitectură. Design. Inginerie.</h1>
@@ -36,13 +30,11 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-row">
-
     <div class="footer-col">
       <h3>Despre noi</h3>
-      <p>Birou de proiectare specializat în arhitectură, inginerie și consultanță tehnică pentru proiecte publice și private.</p>
+      <p>Birou de proiectare specializat în arhitectură, inginerie și consultanță tehnică.</p>
     </div>
 
     <div class="footer-separator"></div>
@@ -68,23 +60,23 @@
       <p>Reg. Com.: J00/0000/2025</p>
       <br>
       <h3>Contact</h3>
-      <p>Email: <a href="mailto:contact@skalodesign.ro">contact@skalodesign.ro</a></p>
+      <p>Email: contact@skalodesign.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
       <p>Adresă: București, România</p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
     <p>&copy; 2025 SKALO design. Toate drepturile rezervate.</p>
   </div>
 </footer>
+
 <script>
 function toggleMenu() {
-  document.querySelector('.nav-mobile').classList.toggle('menu-open');
+  document.querySelector('.menu').classList.toggle('menu-open');
 }
 </script>
 
-
 </body>
 </html>
+
