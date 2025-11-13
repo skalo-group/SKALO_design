@@ -33,7 +33,7 @@ body {
   width: auto;
 }
 
-/* MENIU SUS */
+/* MENIU DESKTOP */
 
 .menu {
   list-style: none;
@@ -100,48 +100,11 @@ body {
 }
 
 /* =======================
-   SECTIUNI CONTINUT
-   ======================= */
-
-.content a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.content a:hover {
-  color: #00bcd4;
-  text-decoration: underline;
-}
-
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.box {
-  background-color: #222;
-  padding: 1.5rem;
-  flex: 1 1 30%;
-  border-radius: 8px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.box:hover {
-  background: #00bcd4;
-  color: #111;
-}
-
-/* =======================
-   FOOTER NOU (3 COLOANE)
+   FOOTER
    ======================= */
 
 .footer {
-  background-color: #f5f0e6; /* crem */
+  background-color: #f5f0e6;
   color: #111;
   padding: 3rem 8%;
   margin-top: 4rem;
@@ -191,15 +154,11 @@ body {
   color: #00bcd4;
 }
 
-/* LINII VERTICALE INTRE COLOANE */
-
 .footer-separator {
   width: 1px;
   background-color: #bbb;
   height: 100%;
 }
-
-/* LINIA DE JOS */
 
 .footer-bottom {
   text-align: center;
@@ -209,44 +168,31 @@ body {
   border-top: 1px solid #ccc;
   margin-top: 2rem;
 }
-.service-link {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border: 1px solid #555;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+
+/* =======================
+   MENIU MOBIL (HAMBURGER)
+   ======================= */
+
+/* ascundem hamburger pe desktop */
+.hamburger {
+  display: none;
 }
 
-.service-link:hover {
-  color: #00bcd4;
-  border-color: #00bcd4;
-}
-.content h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-/* Text introductiv acasa */
-.intro-text {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #444;      /* gri elegant */
-  margin-top: -0.5rem;
-}
-/* === RESPONSIVE (telefon) === */
-/* --- MENIU MOBIL CORECT --- */
+/* --- mobil --- */
 @media (max-width: 768px) {
 
+  /* afișăm hamburger */
   .hamburger {
     display: block !important;
     font-size: 32px;
     cursor: pointer;
-    padding: 0.4rem 0.6rem;
     margin-left: auto;
+    padding: 0.4rem 0.6rem;
+    user-select: none;
+    z-index: 99999;
   }
 
+  /* meniul mobil ascuns implicit */
   .menu {
     display: none !important;
     flex-direction: column;
@@ -258,13 +204,13 @@ body {
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
   }
 
+  /* meniul se deschide */
   .menu.menu-open {
     display: flex !important;
   }
-}
-
 
   .menu li {
     margin-bottom: 0.7rem;
@@ -285,55 +231,9 @@ body {
     background: #00bcd4 !important;
     color: #ffffff !important;
   }
-}
-/* --- MENIU MOBIL --- */
-@media (max-width: 768px) {
 
-  
-    display: block !important;
-    font-size: 32px;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 0.4rem 0.6rem;
-    user-select: none;
-    z-index: 9999;
-  }
-
-  .menu {
-    display: none !important;
-    flex-direction: column;
-    position: absolute;
-    right: 15px;
-    top: 80px;
-    width: 75%;
-    background: #f5f0e6;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  }
-
-  .menu.menu-open {
-    display: flex !important;
-  }
-
-  .menu a {
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 0.7rem;
-    color: #111;
-    font-size: 1.1rem;
+  /* ascundem meniul desktop */
+  .menu-desktop {
+    display: none;
   }
 }
-/* --- REPARAȚIE HAMBURGER --- */
-.hamburger {
-  display: block !important;
-  font-size: 32px;
-  cursor: pointer;
-  margin-left: auto;
-  padding: 0.4rem 0.6rem;
-  z-index: 99999;
-}
-
-
