@@ -99,8 +99,9 @@ body {
   margin: 0 auto;
 }
 
+
 /* =======================
-   FOOTER
+   FOOTER FINAL PERFECT
    ======================= */
 
 .footer {
@@ -115,7 +116,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .footer-col {
@@ -154,12 +155,14 @@ body {
   color: #00bcd4;
 }
 
+/* —— Linii verticale între coloane —— */
 .footer-separator {
   width: 1px;
   background-color: #bbb;
   height: 100%;
 }
 
+/* —— Zona de jos —— */
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
@@ -168,6 +171,28 @@ body {
   border-top: 1px solid #ccc;
   margin-top: 2rem;
 }
+
+/* =======================
+   RESPONSIVE FOOTER
+   ======================= */
+
+/* Telefon și tablete */
+@media (max-width: 768px) {
+
+  .footer-row {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-separator {
+    display: none;
+  }
+
+  .footer-col {
+    text-align: left;
+  }
+}
+
 
 /* =======================
    MENIU MOBIL (HAMBURGER)
